@@ -1,4 +1,9 @@
+import Layout from "@/sections/Layout";
 
 export default function Home() {
-  return <main className="w-full min-h-screen">Home</main>;
+  return (
+    <main className="flex items-center text-dark w-full min-h-screen">
+      <Layout />
+    </main>
+  );
 }
