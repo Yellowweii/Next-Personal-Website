@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  framer-motion:
+    specifier: ^10.16.5
+    version: registry.npmmirror.com/framer-motion@10.16.5(react-dom@18.0.0)(react@18.0.0)
   next:
     specifier: 14.0.3
     version: registry.npmmirror.com/next@14.0.3(react-dom@18.0.0)(react@18.0.0)
@@ -14,6 +17,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: registry.npmmirror.com/react-dom@18.0.0(react@18.0.0)
+  react-icons:
+    specifier: ^4.12.0
+    version: registry.npmmirror.com/react-icons@4.12.0(react@18.0.0)
 
 devDependencies:
   '@types/node':
@@ -39,6 +45,24 @@ devDependencies:
     version: registry.npmmirror.com/typescript@5.0.2
 
 packages:
+
+  registry.npmmirror.com/@emotion/is-prop-valid@0.8.8:
+    resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz}
+    name: '@emotion/is-prop-valid'
+    version: 0.8.8
+    requiresBuild: true
+    dependencies:
+      '@emotion/memoize': registry.npmmirror.com/@emotion/memoize@0.7.4
+    dev: false
+    optional: true
+
+  registry.npmmirror.com/@emotion/memoize@0.7.4:
+    resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@emotion/memoize/-/memoize-0.7.4.tgz}
+    name: '@emotion/memoize'
+    version: 0.7.4
+    requiresBuild: true
+    dev: false
+    optional: true
 
   registry.npmmirror.com/@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz}
@@ -482,6 +506,27 @@ packages:
     dependencies:
       to-regex-range: registry.npmmirror.com/to-regex-range@5.0.1
     dev: true
+
+  registry.npmmirror.com/framer-motion@10.16.5(react-dom@18.0.0)(react@18.0.0):
+    resolution: {integrity: sha512-GEzVjOYP2MIpV9bT/GbhcsBNoImG3/2X3O/xVNWmktkv9MdJ7P/44zELm/7Fjb+O3v39SmKFnoDQB32giThzpg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/framer-motion/-/framer-motion-10.16.5.tgz}
+    id: registry.npmmirror.com/framer-motion/10.16.5
+    name: framer-motion
+    version: 10.16.5
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: registry.npmmirror.com/react@18.0.0
+      react-dom: registry.npmmirror.com/react-dom@18.0.0(react@18.0.0)
+      tslib: registry.npmmirror.com/tslib@2.6.2
+    optionalDependencies:
+      '@emotion/is-prop-valid': registry.npmmirror.com/@emotion/is-prop-valid@0.8.8
+    dev: false
 
   registry.npmmirror.com/fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs.realpath/-/fs.realpath-1.0.0.tgz}
@@ -966,6 +1011,17 @@ packages:
       loose-envify: registry.npmmirror.com/loose-envify@1.4.0
       react: registry.npmmirror.com/react@18.0.0
       scheduler: registry.npmmirror.com/scheduler@0.21.0
+    dev: false
+
+  registry.npmmirror.com/react-icons@4.12.0(react@18.0.0):
+    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-icons/-/react-icons-4.12.0.tgz}
+    id: registry.npmmirror.com/react-icons/4.12.0
+    name: react-icons
+    version: 4.12.0
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: registry.npmmirror.com/react@18.0.0
     dev: false
 
   registry.npmmirror.com/react@18.0.0:
