@@ -27,10 +27,10 @@ const Navbar = () => {
         <motion.a href="https://linkedin.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3">
           <LinkedInIcon />
         </motion.a>
-        <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3">
+        <motion.a href="https://www.yellowwei.cn/img/QQ.png" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3">
           <QQIcon />
         </motion.a>
-        <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3">
+        <motion.a href="https://www.yellowwei.cn/img/Wechat.png" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3">
           <WechatIcon />
         </motion.a>
       </nav>
