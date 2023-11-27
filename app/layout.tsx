@@ -1,3 +1,4 @@
+import Footer from "@/sections/Footer";
 import Navbar from "@/sections/Navbar";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${montserrat.className} bg-light`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
