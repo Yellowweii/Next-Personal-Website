@@ -1,8 +1,9 @@
 import AnimatedText from "@/components/AnimatedText";
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import profilePic from "@/public/images/profile/developer-pic-2.jpg";
 import AnimatedNumbers from "@/components/AnimatedNumbers";
+import Skills from "@/sections/Skills";
 
 const About = () => {
   return (
@@ -49,6 +50,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Skills />
       </div>
     </main>
   );
