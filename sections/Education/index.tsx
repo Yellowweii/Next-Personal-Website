@@ -4,7 +4,7 @@ import Details from "@/components/Details";
 import React from "react";
 import { motion, useScroll } from "framer-motion";
 
-const Experience = () => {
+const Education = () => {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -12,7 +12,7 @@ const Experience = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="text-8xl font-bold mb-32 w-full text-center">Experience</h2>
+      <h2 className="text-8xl font-bold mb-32 w-full text-center">Education</h2>
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] bg-dark h-full origin-top"></motion.div>
         <ul className="flex flex-col gap-8 items-start justify-between ml-4">
@@ -35,4 +35,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
