@@ -16,8 +16,8 @@ const FuturedProject = ({ type, title, summary, img, link, github }: FuturedProj
   return (
     <article className="flex w-full items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark"></div>
-      <Link className="w-1/2 cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank">
-        <Image src={img} alt={title} className="w-full h-auto" priority />
+      <Link className="w-1/2 cursor-pointer overflow-hidden rounded-lg group" href={link} target="_blank">
+        <Image src={img} alt={title} className="w-full h-auto group-hover:scale-105 duration-200" priority />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
