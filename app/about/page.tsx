@@ -9,7 +9,7 @@ import Experience from "@/sections/Experience";
 const About = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center">
-      <div className="p-24 pt-16">
+      <div className="p-24 pt-16 pb-0">
         <AnimatedText className="!text-8xl mb-16" text="Passion Fuels Purpose!" />
         <div className="grid w-full grid-cols-8 gap-16">
           <div className="col-span-3 flex flex-col items-center justify-start">
