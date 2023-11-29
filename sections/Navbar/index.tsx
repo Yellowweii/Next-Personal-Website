@@ -78,7 +78,7 @@ const Navbar = () => {
               <CustomMobileLink toggleMenu={toggleMenu} key={link.href} title={link.title} href={link.href} />
             ))}
           </nav>
-          <nav className="flex items-center justify-center flex-wrap mt-4">
+          <nav className="flex items-center justify-center flex-wrap mt-6">
             <motion.a href="https://github.com/Yellowweii" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-1 sm:mx-3 bg-light rounded-full dark:bg-dark">
               <GithubIcon />
             </motion.a>

@@ -11,10 +11,10 @@ const Experience = () => {
     offset: ["start end", "center start"]
   });
   return (
-    <div className="my-64">
-      <h2 className="text-8xl font-bold mb-32 w-full text-center">Experience</h2>
-      <div ref={ref} className="w-[75%] mx-auto relative">
-        <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] bg-dark h-full origin-top dark:bg-light"></motion.div>
+    <div className="my-32 xl:my-64">
+      <h2 className="text-6xl xl:text-8xl font-bold mb-16 xl:mb-32 w-full text-center">Experience</h2>
+      <div ref={ref} className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
+        <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-[30px] md:left-9 top-0 w-[2px] md:w-[4px] bg-dark h-full origin-top dark:bg-light"></motion.div>
         <ul className="flex flex-col gap-8 items-start justify-between ml-4">
           {[1, 2, 3, 4, 5].map((item) => (
             <Details
