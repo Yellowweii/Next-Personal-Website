@@ -10,7 +10,7 @@ import article5 from "@/public/images/articles/smooth scrolling in reactjs.png";
 
 const Articles = () => {
   return (
-    <main className="w-full mb-16 flex flex-col items-center justify-center">
+    <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <div className="p-24 pt-16 pb-0">
         <AnimatedText className="!text-8xl" text="Words Can Change The World!" />
         <ul className="mt-16 grid grid-cols-2 gap-16">

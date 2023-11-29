@@ -8,6 +8,12 @@ dependencies:
   framer-motion:
     specifier: ^10.16.5
     version: registry.npmmirror.com/framer-motion@10.16.5(react-dom@18.0.0)(react@18.0.0)
+  lucide:
+    specifier: ^0.293.0
+    version: registry.npmmirror.com/lucide@0.293.0
+  lucide-react:
+    specifier: ^0.293.0
+    version: registry.npmmirror.com/lucide-react@0.293.0(react@18.0.0)
   next:
     specifier: 14.0.3
     version: registry.npmmirror.com/next@14.0.3(react-dom@18.0.0)(react@18.0.0)
@@ -714,6 +720,23 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: registry.npmmirror.com/js-tokens@4.0.0
+    dev: false
+
+  registry.npmmirror.com/lucide-react@0.293.0(react@18.0.0):
+    resolution: {integrity: sha512-g3AN0EYITCpAjNgLHrKrFWvIJzZy0Y9OPBaonyKw1cM+nZE6piOM+TiuQdYfha7oa76TMiDaWXQHE44CEqsrzw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lucide-react/-/lucide-react-0.293.0.tgz}
+    id: registry.npmmirror.com/lucide-react/0.293.0
+    name: lucide-react
+    version: 0.293.0
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react@18.0.0
+    dev: false
+
+  registry.npmmirror.com/lucide@0.293.0:
+    resolution: {integrity: sha512-LTL2scS6yZi6Owm0uKQtgV1VuUXa2DdgLEAEjUvasV3KtGuRKldZzhqcf4l3nSSA0kgSyicjfUkScnEI3eSwxg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lucide/-/lucide-0.293.0.tgz}
+    name: lucide
+    version: 0.293.0
     dev: false
 
   registry.npmmirror.com/merge2@1.4.1:
