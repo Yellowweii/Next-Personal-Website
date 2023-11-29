@@ -14,7 +14,7 @@ const Experience = () => {
     <div className="my-64">
       <h2 className="text-8xl font-bold mb-32 w-full text-center">Experience</h2>
       <div ref={ref} className="w-[75%] mx-auto relative">
-        <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] bg-dark h-full origin-top"></motion.div>
+        <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] bg-dark h-full origin-top dark:bg-light"></motion.div>
         <ul className="flex flex-col gap-8 items-start justify-between ml-4">
           {[1, 2, 3, 4, 5].map((item) => (
             <Details
