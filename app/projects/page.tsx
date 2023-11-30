@@ -22,10 +22,10 @@ const Projects = () => {
               github="https://github.com/Yellowweii"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 sm:col-span-6">
             <Project img={project1} title={"Crypto Screener Application"} link="/" type="Futured Project" github="https://github.com/Yellowweii" />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 sm:col-span-6">
             <Project img={project1} title={"Crypto Screener Application"} link="/" type="Futured Project" github="https://github.com/Yellowweii" />
           </div>
           <div className="col-span-12">
@@ -40,10 +40,10 @@ const Projects = () => {
               github="https://github.com/Yellowweii"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 sm:col-span-6">
             <Project img={project1} title={"Crypto Screener Application"} link="/" type="Futured Project" github="https://github.com/Yellowweii" />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 sm:col-span-6">
             <Project img={project1} title={"Crypto Screener Application"} link="/" type="Futured Project" github="https://github.com/Yellowweii" />
           </div>
         </div>
