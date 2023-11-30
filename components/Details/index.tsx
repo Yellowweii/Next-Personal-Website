@@ -17,6 +17,7 @@ const Details = ({ position, company, companyLink, time, address, work }: Detail
     <li ref={ref} className="w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between">
       <LiIcon reference={ref} />
       <motion.div
+      className="pl-2 sm:pl-0"
         initial={{ y: 80 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5 }}

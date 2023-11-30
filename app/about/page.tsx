@@ -11,8 +11,8 @@ const About = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center dark:text-light overflow-hidden">
       <Transition />
-      <div className="p-8 sm:p-12 md:p-16 lg:p-24 pt-16 pb-0 w-full">
-        <AnimatedText className="!text-5xl sm:!text-7xl lg:!text-8xl mb-8 xl:mb-16" text="Passion Fuels Purpose!" />
+      <div className="p-6 xs:p-8 sm:p-12 md:p-16 lg:p-24 pb-0 w-full">
+        <AnimatedText className=" !text-4xl xs:!text-5xl sm:!text-7xl lg:!text-8xl mb-8 xl:mb-16" text="Passion Fuels Purpose!" />
         <div className="grid w-full grid-cols-8 gap-8 sm:gap-16">
           <div className="col-span-8 order-2 md:order-1 md:col-span-4 xl:col-span-3 flex flex-col items-center justify-start">
             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 self-start">Biography</h2>
@@ -34,19 +34,19 @@ const About = () => {
           </div>
           <div className="col-span-8 order-3 xl:col-span-2 flex flex-row xl:flex-col items-center xl:items-end justify-between">
             <div className="flex flex-col items-center xl:items-end justify-center">
-              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+              <span className="inline-block text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                 <AnimatedNumbers value={50} />+
               </span>
               <h2 className="text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">satisfied clients</h2>
             </div>
             <div className="flex flex-col items-center xl:items-end justify-center">
-              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+              <span className="inline-block text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                 <AnimatedNumbers value={40} />+
               </span>
               <h2 className="text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">projects completed</h2>
             </div>
             <div className="flex flex-col items-center xl:items-end justify-center">
-              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+              <span className="inline-block text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                 <AnimatedNumbers value={4} />+
               </span>
               <h2 className="text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">years of experience</h2>

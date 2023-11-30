@@ -13,9 +13,9 @@ const Articles = () => {
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <Transition />
-      <div className="p-8 sm:p-12 md:p-16 lg:p-24 xl:p-32 pt-16 pb-0">
-        <AnimatedText className="text-6xl xl:text-8xl" text="Words Can Change The World!" />
-        <ul className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 md:gap-16">
+      <div className="p-6 xs:p-8 sm:p-12 md:p-16 lg:p-24 xl:p-32 pb-0">
+        <AnimatedText className="!text-4xl sm:!text-6xl xl:!text-8xl" text="Words Can Change The World!" />
+        <ul className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 md:gap-16">
           <FuturedArticle
             title="Build A Custom Pagination Component In Reactjs From Scratch"
             time="9 min read"
