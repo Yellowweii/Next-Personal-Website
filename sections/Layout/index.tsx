@@ -20,10 +20,10 @@ const Layout = ({ className }: LayoutProps) => {
         </div>
         <div className="w-full lg:w-1/2 flex flex-col items-center self-center">
           <AnimatedText
-            className="text-center !text-3xl sm:!text-5xl md:!text-6xl md:text-center lg:!text-5xl lg:text-left xl:!text-6xl xl:text-left xl:!leading-[74px]"
+            className="text-center !text-2xl xs:!text-3xl sm:!text-5xl md:!text-6xl md:text-center lg:!text-5xl lg:text-left xl:!text-6xl xl:text-left xl:!leading-[74px]"
             text="Turning Vision Into Reality With Code And Design."
           />
-          <p className="my-4 text-xs sm:text-sm md:text-base font-medium">
+          <p className="my-4 text-sm md:text-base font-medium text-center lg:text-left">
             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web
             development.
           </p>

@@ -36,7 +36,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="w-full px-8 md:px-16 lg:px-24 xl:px-32 py-8 font-medium flex items-center justify-between dark:text-light relative">
+    <header className="w-full px-8 md:px-16 lg:px-24 xl:px-32 py-6 sm:py-8 font-medium flex items-center justify-between dark:text-light relative">
       <button onClick={toggleMenu} className="flex justify-center items-center lg:hidden ">
         {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
@@ -100,7 +100,7 @@ const Navbar = () => {
           </nav>
         </motion.div>
       )}
-      <div className="absolute left-[50%] translate-x-[-50%] top-2">
+      <div className="absolute left-[50%] translate-x-[-50%] top-1">
         <Logo />
       </div>
     </header>
