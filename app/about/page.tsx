@@ -5,10 +5,12 @@ import profilePic from "@/public/images/profile/developer-pic-2.jpg";
 import AnimatedNumbers from "@/components/AnimatedNumbers";
 import Skills from "@/sections/Skills";
 import Experience from "@/sections/Experience";
+import Transition from "@/components/Transition";
 
 const About = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center dark:text-light overflow-hidden">
+      <Transition />
       <div className="p-8 sm:p-12 md:p-16 lg:p-24 pt-16 pb-0 w-full">
         <AnimatedText className="!text-5xl sm:!text-7xl lg:!text-8xl mb-8 xl:mb-16" text="Passion Fuels Purpose!" />
         <div className="grid w-full grid-cols-8 gap-8 sm:gap-16">

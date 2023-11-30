@@ -3,10 +3,12 @@ import FuturedProject from "@/components/FuturedProject";
 import React from "react";
 import project1 from "@/public/images/projects/crypto-screener-cover-image.jpg";
 import Project from "@/components/Project";
+import Transition from "@/components/Transition";
 
 const Projects = () => {
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <Transition />
       <div className="w-full h-full p-8 sm:p-12 md:p-16 lg:p-24 xl:p-32 pt-16 inline-block z-0">
         <AnimatedText className="text-6xl xl:text-8xl" text="Imagination Trumps Knowledge!" />
         <div className="grid grid-cols-12 gap-x-0 sm:gap-x-8 lg:gap-x-16 xl:gap-x-24 gap-y-24 md:gap-y-32 mt-16">
