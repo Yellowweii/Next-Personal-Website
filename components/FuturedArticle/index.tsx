@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/Image";
+import Image, { StaticImageData } from "next/image";
 
 interface FuturedArticleProps {
   img: StaticImageData;

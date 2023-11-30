@@ -1,4 +1,5 @@
 import React from "react";
+import developer from "@/public/images/profile/developer-pic-1.png";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -15,15 +16,7 @@ const Layout = ({ className }: LayoutProps) => {
     <div className={`${className} w-full h-full z-0`}>
       <div className="flex flex-col sm:flex-col lg:flex-row items-center justify-between w-full p-8 md:p-16 lg:p-24 xl:p-32 xl:pt-0">
         <div className=" w-full md:hidden lg:inline-block lg:w-1/2">
-          <Image
-            src="https://home.weblvw.com/_next/image?url=%2Fimages%2FprofilePic.png&w=1080&q=75"
-            alt="picture"
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            className="w-full h-auto"
-            width={500}
-            height={500}
-          />
+          <Image src={developer} alt="developer" priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" className="w-full h-auto" width={500} height={500} />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col items-center self-center">
           <AnimatedText
