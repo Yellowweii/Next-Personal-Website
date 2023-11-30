@@ -30,7 +30,7 @@ const MovingImg = ({ title, link, img }) => {
         style={{ x, y }}
         src={img}
         alt={title}
-        className={`z-10 w-96 h-auto ${isHovered ? "inline-block" : "hidden"} absolute rounded-lg`}
+        className={`z-10 w-96 h-auto ${isHovered ? "md:inline-block" : "md:hidden"} absolute rounded-lg hidden `}
       />
     </Link>
   );
