@@ -7,10 +7,12 @@ import Article from "@/components/Article";
 import article3 from "@/public/images/articles/create modal component in react using react portals.png";
 import article4 from "@/public/images/articles/form validation in reactjs using custom react hook.png";
 import article5 from "@/public/images/articles/smooth scrolling in reactjs.png";
+import Transition from "@/components/Transition";
 
 const Articles = () => {
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+      <Transition />
       <div className="p-8 sm:p-12 md:p-16 lg:p-24 xl:p-32 pt-16 pb-0">
         <AnimatedText className="text-6xl xl:text-8xl" text="Words Can Change The World!" />
         <ul className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 md:gap-16">
