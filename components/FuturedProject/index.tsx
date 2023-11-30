@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Image, { StaticImageData } from "next/Image";
+import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "../Icons";
 
 interface FuturedProjectProps {
