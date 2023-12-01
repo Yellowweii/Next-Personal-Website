@@ -1,3 +1,4 @@
+import ThemeSwitch from "@/context/ThemeSwitch";
 import Footer from "@/sections/Footer";
 import Navbar from "@/sections/Navbar";
 import type { Metadata } from "next";
@@ -13,11 +14,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.className} bg-light dark:bg-dark`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeSwitch>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeSwitch>
       </body>
     </html>
   );
