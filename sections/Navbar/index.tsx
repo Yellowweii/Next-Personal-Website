@@ -69,9 +69,10 @@ const Navbar = () => {
         </nav>
       </div>
       {isMenuOpen && (
-        <motion.div className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-sm py-32 "
-        initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-        animate={{ scale: 1, opacity: 1 }}
+        <motion.div
+          className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-sm py-32 "
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
         >
           <nav className="flex flex-col items-center justify-center gap-4">
             {navLinks.map((link) => (
