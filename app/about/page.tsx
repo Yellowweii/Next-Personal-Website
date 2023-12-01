@@ -11,7 +11,7 @@ const About = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center dark:text-light overflow-hidden">
       <Transition />
-      <div className="p-6 xs:p-8 sm:p-12 md:p-16 lg:p-24 pb-0 w-full">
+      <div className="p-6 xs:p-8 sm:p-12 md:p-16 lg:p-24 xl:p-32 pb-0 w-full">
         <AnimatedText className=" !text-4xl xs:!text-5xl sm:!text-7xl lg:!text-8xl mb-8 xl:mb-16" text="Passion Fuels Purpose!" />
         <div className="grid w-full grid-cols-8 gap-8 sm:gap-16">
           <div className="col-span-8 order-2 md:order-1 md:col-span-4 xl:col-span-3 flex flex-col items-center justify-start">

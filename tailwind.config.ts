@@ -33,7 +33,7 @@ const config: Config = {
         "spin-slow": "spin 8s linear infinite",
       },
       screens: {
-        xs: { min: "479px" },
+        xs: "479px",
       },
     },
   },

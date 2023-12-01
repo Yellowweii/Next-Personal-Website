@@ -3,34 +3,18 @@
 import CustomLink from "@/components/CustomLink/inex";
 import { GithubIcon, LinkedInIcon, MoonIcon, QQIcon, SunIcon, TwitterIcon, WechatIcon } from "@/components/Icons";
 import Logo from "@/components/Logo";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { navLinks } from "@/lib/data";
 import { Menu, X } from "lucide-react";
 import CustomMobileLink from "@/components/CustomMobileLink";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
-  const [mode, setMode] = useState<"light" | "dark">("light");
+  const { theme, setTheme } = useTheme();
   const handleChange = () => {
-    if (mode === "light") {
-      setMode("dark");
-      document.documentElement.classList.add("dark");
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      setMode("light");
-      document.documentElement.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
-    }
+    setTheme(theme === "light" ? "dark" : "light");
   };
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme");
-    if (localTheme) {
-      setMode(localTheme as "light" | "dark");
-      if (localTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    }
-  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -63,8 +47,8 @@ const Navbar = () => {
           <motion.a href="https://linkedin.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3">
             <LinkedInIcon />
           </motion.a>
-          <button className={`${mode === "light" ? "text-dark" : "text-dark"} ml-3 flex items-center justify-center rounded-full p-1 bg-light`} onClick={handleChange}>
-            {mode === "light" ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
+          <button className={`${theme === "light" ? "text-dark" : "text-dark"} ml-3 flex items-center justify-center rounded-full p-1 bg-light`} onClick={handleChange}>
+            {theme === "light" ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
           </button>
         </nav>
       </div>
@@ -95,7 +79,7 @@ const Navbar = () => {
             <motion.a href="https://linkedin.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-1 sm:mx-3">
               <LinkedInIcon />
             </motion.a>
-            <button className={`${mode === "light" ? "text-dark" : "text-dark"} ml-3 flex items-center justify-center rounded-full p-1 bg-light`} onClick={handleChange}>
+            <button className={`${theme === "light" ? "text-dark" : "text-dark"} ml-3 flex items-center justify-center rounded-full p-1 bg-light`} onClick={handleChange}>
               {mode === "light" ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
             </button>
           </nav>
